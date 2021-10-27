@@ -13,7 +13,7 @@ typedef struct                                                    //struktura st
 
 int procitajDatoteku(char *imeDatoteke);                                   //prototip 1. funkcije
 Student* alocirajIProcitajIzDatoteke(char* imeDatoteke, int brojStudenata);   //prototip 2. funkcije
-int max_br_bodova(Student *studenti,int brojStudenata);                    //prototip 3. funkcije
+int maxBodovi(Student *studenti,int brojStudenata);                    //prototip 3. funkcije
 
 int main()                                                               // funkcija main
 {
@@ -25,7 +25,7 @@ int main()                                                               // funk
     printf("Ova datoteka ima %d redaka.\n",brojRedaka);
    
     studenti = alocirajIProcitajIzDatoteke(imeDat, brojRedaka);
-    int max=max_br_bodova(studenti,brojRedaka);
+    int max=maxBodovi(studenti,brojRedaka);
     printf("IME PREZIME APS_BOD REL_BOD \n");
     for(i=0;i<brojRedaka;i++)
     {
